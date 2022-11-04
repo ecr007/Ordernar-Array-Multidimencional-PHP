@@ -1,11 +1,13 @@
 # Order multidimensional Array PHP
 
 ```php
-array_multisort(array_column($records, 'year'), SORT_ASC,
-                array_column($records, 'total'),      SORT_DESC,
-                $records);
+array_multisort(
+  array_column($records, 'year'), SORT_ASC,
+  array_column($records, 'total'), SORT_DESC,
+  $records
+);
                 
-                ```
+```
                 
 ```php
 usort($response['all'], function($a,$b) use($identifier){
